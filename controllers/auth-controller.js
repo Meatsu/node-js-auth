@@ -4,6 +4,9 @@ const jwt = require('jsonwebtoken')
 
 const registerUser = async (req, res) => {
     try{
+
+        console.log("REGISTER ROUTE REACHED")
+        
         //extract user information from our request body
         const {username, email, password, role} = req.body
 
